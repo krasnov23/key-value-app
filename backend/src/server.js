@@ -25,7 +25,7 @@ mongoose.connect(`mongodb://${process.env.MONGODB_HOST}/${process.env.KEY_VALUE_
     catch(err => console.error(err));
 
 app.get('/health',(req,res) =>{
-    res.status(200).send('up');
+    res.status(200).send('up!');
 })
 
 
