@@ -1,15 +1,12 @@
 MONGODB_IMAGE="mongodb/mongodb-community-server"
 MONGODB_TAG="7.0-ubuntu2204"
-source .env.db
 
 #root credentials
 ROOT_USER="root-user"
 ROOT_PASSWORD="root-password"
 
-# key-value credentials
-KEY_VALUE_DB="key-value-db"
-KEY_VALUE_USER="key-value-user"
-KEY_VALUE_PASSWORD="key-value-password"
+#credentials
+source .env.db
 
 # network и порты контейнера
 source .env.network
